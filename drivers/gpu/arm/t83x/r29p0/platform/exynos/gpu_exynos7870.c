@@ -341,9 +341,6 @@ static int gpu_enable_clock(struct exynos_context *platform)
 
 static int gpu_disable_clock(struct exynos_context *platform)
 {
-	GPU_LOG(DVFS_DEBUG, DUMMY, 0u, 0u, "%s: [vclk_g3d]\n", __func__);
-	clk_disable_unprepare(vclk_g3d);
-	return 0;
 }
 #endif
 
